@@ -132,7 +132,6 @@
 
     .cart{
         width: 100%;
-        border-right: none;
     }
 
     .open-menu {
@@ -181,6 +180,12 @@
         align-items: center;
         max-width: unset;
     }
+
+    .cart {
+        left: 0;
+        width: 100%;
+        min-width: unset;
+      }
 
     .categories {
         flex-direction: column;

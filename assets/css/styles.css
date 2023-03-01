@@ -199,12 +199,14 @@ header {
     transition: all 0.5s ease-in-out;
   }
 
+  .cart::-webkit-scrollbar {
+    display: none;
+  }
+
 .open-cart {
     transform: translate(0%);
     transition: all 0.5s ease-in-out;
 }
-
-
   
 
   .cart::-webkit-scrollbar{
