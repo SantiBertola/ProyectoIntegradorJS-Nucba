@@ -152,13 +152,16 @@
     header {
         display: flex;
         justify-content: center;
-        gap: 20px;
         width: 100vw;
     }
 
-    /* .logo-img {
-        display: none;
-    } */
+    .navbar {
+        gap: 0px;
+    }
+
+    .logo-img {
+        width: 50%;
+    }
 
     .item-tittle{
         text-align: center;
@@ -209,9 +212,15 @@
         max-width: 500px;
         min-width: unset;
         text-align: center;
+
+    }
+
+    .contact-tittles h2 {
+        font-size: 1.5rem;
     }
 
     .contact-tittles h3 {
+        font-size: 1.2rem;
         width: 100%;
         flex-wrap: nowrap;
     }
