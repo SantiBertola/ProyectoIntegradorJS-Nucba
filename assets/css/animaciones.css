@@ -1,0 +1,125 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 65px;
+}
+
+
+
+.navbar-links li {
+    position: relative;
+    padding: 0;
+  }
+  
+  .navbar-links li a::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #b55450;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.15s ease;
+  }
+  
+  .navbar-links li a:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+  }
+
+  .cart-img1 {
+    position: relative;
+    padding: 0;
+  }
+  
+  .cart-img1::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #b55450;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.15s ease;
+  }
+  
+  .cart-img1:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+  }
+
+  .cart-img2 {
+    position: relative;
+    padding: 0;
+  }
+  
+  .cart-img2::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #b55450;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.15s ease;
+  }
+  
+  .cart-img2:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+  }
+
+  .footer-links li {
+    position: relative;
+    padding: 0;
+  }
+  
+  .footer-links li a::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #b55450;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.15s ease;
+  }
+  
+  .footer-links li a:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+  }
+
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to  {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-up {
+    0% {
+      transform: translateY(100px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .hero-info h2 {
+    animation: fade 1s ease-in, slide-up 1.3s ease-in-out;
+  }
+
+  .hero-info h4 {
+    animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+  }

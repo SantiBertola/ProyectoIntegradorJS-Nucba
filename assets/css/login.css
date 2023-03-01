@@ -1,0 +1,194 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img{
+    filter: drop-shadow(0px 7px 21px #cc564f);
+    animation: rotar 5s linear infinite;
+  }
+
+  @keyframes rotar {
+    0%{
+      transform: rotatey(0deg);
+    }
+    30%{
+      transform: rotatey(90deg);
+    }
+    50%{
+      transform: rotatey(180deg);
+    }
+    70%{
+      transform: rotatey(280deg);
+    }
+    100%{
+      transform: rotatey(360deg);
+    }
+}
+
+.logo-img:hover {
+    animation: none;
+}
+
+
+.login-form-register {
+    background-color: #2b3438ad;
+    width: 60vw;
+    height: 90%;
+}
+
+.login-form {
+    background-color: #2b3438ad;
+    width: 60vw;
+    height: 30%;
+}
+
+.login-tittle {
+    color: #cc564f;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.login-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #e4584f;
+    gap: 20px;
+    font-size: 1rem;
+}
+
+.login-inputs input {
+    display: flex;
+    background-color:  #cc564f;
+    width: 30%;
+    border: 2px solid black;
+}
+
+.login-inputs input::placeholder {
+    color: #000000;
+}
+
+#login-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 55px;
+    padding: 10px;
+    margin: 1.3rem;
+}
+
+#login-links .login-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 35px;
+}
+
+.registro {
+    background-color: #cc564f;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.registro:hover {
+    border: 2px solid #e4584f;
+    color: #e4584f;
+    background-color: #2b3438 ;
+    transition: 0.3s all ease-in;
+}
+
+
+.password {
+    background-color: #2b3438ad;
+    color: #e4584f;
+    border: 2px solid #e4584f;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.password:hover {
+    color: black;
+    background-color: #b55450 ;
+    transition: 0.3s all ease-in;
+    border: 2px solid black;
+}
+
+.login-inputs #subm {
+    margin: 15px;
+    padding: 5px;
+    width: 15%;
+    font-size: 14px;
+    font-weight: 800;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.login-inputs #subm:hover {
+    border: 2px solid #e4584f;
+    color: #e4584f;
+    background-color: #2b3438 ;
+    transition: 0.3s all ease-in;
+}
+
+.form-divs input {
+    background-color: #2b3438;
+    color: #000000;
+    width: 40%;
+    height: 25%;
+    border: 1px solid #cc564f;
+}
+
+.form-divs input::placeholder, .form-divs select::placeholder, .form-divs textarea::placeholder {
+    color: #cc564f;
+    text-align: center;
+}
+
+.form-divs #birthday {
+    color: #cc564f;
+    text-align: center;
+}
+
+.form-divs.error input {
+    border: 3px solid #dc3545;
+    color: #dc3545;
+    background-color: #2b3438;
+    padding: 3px;
+    text-align: center;
+  }
+  
+  .form-divs.error small {
+    color: #dc3545;
+    max-width: 350px;
+    text-align: center;
+    padding: 7px 0;
+  }
+  
+  .form-divs.success input {
+    border: 3px solid #28a745;
+    color: #28a745;
+    background-color: #2b3438;
+    padding: 3px;
+    text-align: center;
+  }
+  
+  .form-divs.success small {
+    color: #28a745;
+    max-width: 350px;
+    font-size: 12px;
+    text-align: center;
+    padding: 7px 0;
+  }

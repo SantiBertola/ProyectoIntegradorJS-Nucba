@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Star Basketball</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/animaciones.css">
+    <link rel="stylesheet" href="./assets/css/mediaqueries.css">
+    <link rel="icon" type="image/png" href="./assets/img/182073.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+    <header>
+        <div class="logo-img">
+            <a href="index.html">
+                <img src="/assets/img/Header/ffd56269917e411bb82cce4e0189ddf8-removebg-preview.png" alt="Logo png">
+            </a>
+        </div>
+        <div class="navbar">
+            <div class="menu-label">
+                <img src="assets/img/icons8-menú-96-removebg-preview.png" alt="Icono menu" class="menu-icon">
+            </div>
+
+
+            <ul class="navbar-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="https://www.nba.com/schedule" target="_blank">NBA</a></li>
+                <li><a href="register.html">Registrate</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+
+            <div class="cart-img">
+                <div class="buscar">
+                    <input type="text" placeholder="Buscar" required />
+
+                    <div class="btn">
+                        <img src="/assets/img/Header/search.svg" alt="Buscador">
+                    </div>
+                </div>
+                <div class="cart-label">
+                    <i class="fa-solid fa-cart-shopping cart-icon">
+                        <div class="cart-number">0</div>
+                      </i>
+                      
+                </div>
+
+                
+
+            </div>
+            <div class="cart">
+                <h2>TU CARRITO DE COMPRA</h2>
+
+                <div class="cart-conten"></div>
+
+                <span class="divider"></span>
+
+                <div class="cart-total">
+                    <p>Total:</p>
+                    <span class="total"></span>
+                </div>
+                <div class="cart-buttons">
+                    <button class="btn-add btn-buy">Comprar</button>
+                    <button class="btn-add btn-delete">Vaciar carrito</button>
+                </div>
+
+            </div>
+        </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-info">
+                <h2>All-Star Basketball</h2>
+                <h4>Tu tienda favorita de NBA en Argentina </h4>
+                <div class="hero-links">
+                    <a href="/login.html">Iniciar Sesión</a>
+                    <a href="/register.html" class="register">Registrarse</a>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img src="/assets/img/hero/kisspng-nba-basketball-sport-clip-art-michael-jordan-5ac0b4da4d9d90.8628011215225786503179-removebg-preview.png"
+                    alt="MJ">
+            </div>
+        </section>
+
+        <section id="categories">
+
+
+            <div class="categories">
+                <button class="category active">🏀Todos🏀</button>
+                <button class="category" data-category="Novedades">⚡️Novedades⚡️</button>
+                <button class="category" data-category="Hombres">🙋🏼‍♂️Hombres🙋🏼‍♂️</button>
+                <button class="category" data-category="Mujeres">🙋🏼‍♀️Mujeres🙋🏼‍♀️</button>
+                <button class="category" data-category="Accesorios">👓Accesorios👓</button>
+            </div>
+
+
+
+
+
+            <section id="novedades">
+                <div class="nov-tittle">
+                    <h2>😎Nuestro stock😎</h2>
+                    <p>¡Todo lo nuevo para la temporada 2022-23!</p>
+                </div>
+
+                <div class="nov-cards-container"></div>
+                <button class="btn-add btn-load">Ver más</button>
+            </section>
+        </section>
+
+
+
+        <section id="contact">
+            <div class="contact-tittles">
+                <h2>¿Querés enterarte antes que nadie de nuestros nuevos productos y obtener beneficios exclusivos?</h2>
+                <h3>🔥 Dejanos tus datos y suscribite a nuestro newsletter 🔥</h3>
+            </div>
+
+
+            <form id="form" class="form-cont">
+
+
+                <div class="form-divs">
+                    <label for="name">NOMBRE: </label>
+                    <input type="text" id="name" placeholder="Ingrese su nombre" required>
+                    <small></small>
+                </div>
+
+                <div class="form-divs">
+                    <label for="lastName">APELLIDO: </label>
+                    <input type="text" id="lastName" placeholder="Ingrese su apellido" required>
+                    <small></small>
+
+                </div>
+                <div class="form-divs">
+                    <label for="mail">G-MAIL: </label>
+                    <input type="email" id="mail" placeholder="Ingrese su correo electrónico" required>
+                    <small></small>
+                </div>
+                <div class="form-divs">
+
+                    <label for="phone">TÉLEFONO: </label>
+                    <input type="phone" id="phone" placeholder="Ingrese su número de télefono" required>
+                    <small></small>
+                </div>
+
+                <div class="form-divs">
+
+                    <label for="genero">GENERO:</label>
+                    <select name="genero" id="genero" required>
+                        <option value="Tugenero" disabled>Elige tu genero</option>
+                        <option value="menos18">Hombre</option>
+                        <option value="1925">Mujer</option>
+                        <option value="2635">Prefiero no decirlo</option>
+                    </select>
+                </div>
+
+                <div class="form-divs">
+
+                    <label for="edad">EDAD: </label>
+                    <select name="edad" id="edad" required>
+                        <option value="Tuedad" disabled>Elige tu rango de edad</option>
+                        <option value="menos18">Menos de 18 años</option>
+                        <option value="1925">19 a 25 años</option>
+                        <option value="2635">26 a 35 años</option>
+                        <option value="3650">36 a 50 años</option>
+                        <option value="mas51">Más de 51 años</option>
+                    </select>
+                </div>
+                <div class="form-divs">
+                    <label for="sugest">SUGERENCIAS Y COMENTARIOS: </label>
+                    <textarea id="sugest" cols="30" rows="5"
+                        placeholder="Cosas a mejorar, productos que les gustarían, opinión de la pagina, etc..."></textarea>
+                </div>
+
+
+                <input type="submit" name="Envíar" id="subm">
+            </form>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <div class="footer-ul">
+                <ul>
+                    <h4>Ayuda</h4>
+                    <li><a href="#">Mis Pedidos</a></li>
+                    <li><a href="#">Atención a clientes</a></li>
+                    <li><a href="#">All Star Basketball</a></li>
+                </ul>
+            </div>
+            <div class="footer-ul">
+                <ul>
+                    <h4>Institucional</h4>
+                    <li><a href="#">¿Quiénes somos?</a></li>
+                    <li><a href="#">¿Donde estamos?</a></li>
+                    <li><a href="#">Aviso de Privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-ul">
+                <ul>
+                    <h4>Contacto</h4>
+                    <li><a href="#">AllStarBasketball@gmail.com</a></li>
+                    <li><a href="#">+54 11 123456</a></li>
+                </ul>
+            </div>
+            <div class="footer-ul">
+                <ul>
+                    <h4>Síguenos</h4>
+                    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.Facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.Twitter.com/" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+    <div class="add-modal"></div>
+    <script src="./assets/js/validations.js"></script>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
