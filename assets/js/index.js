@@ -178,8 +178,8 @@ const toggleCart = () => {
 }
 
 const closeOnClick = (e) => {
-    if (!e.target.classList.contains('navbar-links')) return
-    barsMenu.classList.remove('open-menu')
+    if (!e.target.classList.contains("navbar-link")) return;
+    barsMenu.classList.remove("open-menu");
 }
 
 const renderCartProduct = ({ id, name, price, img, quantity }) => {
